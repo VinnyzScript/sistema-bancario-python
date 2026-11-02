@@ -1,0 +1,4 @@
+banco_dados.json
+__pycache__/
+*.pyc
+.vscode/
