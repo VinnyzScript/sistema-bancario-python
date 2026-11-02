@@ -41,4 +41,4 @@ Este projeto possui finalidade educacional e n√£o deve ser utilizado para opera√
 
 ---
 
-Desenvolvido como projeto de estudo em Python.# sistema-bancario-python
+Desenvolvido como projeto de estudo em Python.
