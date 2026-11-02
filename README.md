@@ -23,7 +23,7 @@ Sistema bancário desenvolvido em Python como projeto de estudo, com o objetivo 
 ## Como executar
 
 1. Clone o repositório:
-   `git clone https://github.com/SEU-USUARIO/sistema-bancario-python.git`
+   `[git clone https://github.com/SEU-USUARIO/sistema-bancario-python.git](https://github.com/VinnyzScript/sistema-bancario-python/tree/main)`
 
 2. Entre na pasta:
    `cd sistema-bancario-python`
