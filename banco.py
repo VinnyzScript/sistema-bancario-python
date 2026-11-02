@@ -7,10 +7,7 @@ from datetime import datetime
 
 ARQUIVO = "banco_dados.json"
 
-
-# ==============================
 # ARMAZENAMENTO DE DADOS
-# ==============================
 
 def carregar_dados():
     if os.path.exists(ARQUIVO):
@@ -54,9 +51,7 @@ def ler_valor(mensagem):
         return None
 
 
-# ==============================
 # CADASTRO DE CLIENTES
-# ==============================
 
 def cadastrar_cliente():
     print("\n===== CADASTRO DE CLIENTE =====")
@@ -114,10 +109,7 @@ def gerar_numero_conta():
         if numero not in contas_existentes:
             return numero
 
-
-# ==============================
 # LOGIN
-# ==============================
 
 def login():
     print("\n===== LOGIN =====")
@@ -135,9 +127,7 @@ def login():
     return None
 
 
-# ==============================
 # CONTAS BANCÁRIAS
-# ==============================
 
 def selecionar_conta(cpf):
     contas = dados["clientes"][cpf]["contas"]
@@ -170,9 +160,7 @@ def criar_conta(cpf):
     print(f"Número da conta: {numero}")
 
 
-# ==============================
 # OPERAÇÕES BANCÁRIAS
-# ==============================
 
 def consultar_saldo(cpf, numero):
     conta = dados["clientes"][cpf]["contas"][numero]
@@ -275,9 +263,7 @@ def transferir(cpf, numero):
     print("Transferência realizada com sucesso!")
 
 
-# ==============================
 # EXTRATO
-# ==============================
 
 def ver_extrato(cpf, numero):
     conta = dados["clientes"][cpf]["contas"][numero]
@@ -298,9 +284,7 @@ def ver_extrato(cpf, numero):
     print(f"Saldo atual: R$ {conta['saldo']:.2f}")
 
 
-# ==============================
 # MENU DO BANCO
-# ==============================
 
 def menu_bancario(cpf, numero):
     while True:
@@ -351,10 +335,7 @@ def menu_bancario(cpf, numero):
         else:
             print("Opção inválida!")
 
-
-# ==============================
 # INICIALIZAÇÃO
-# ==============================
 
 def iniciar():
     while True:
